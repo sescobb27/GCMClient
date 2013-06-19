@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GCMClient</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="server_registering">
+        Trying (attempt %1$d/%2$d) to register device on Demo Server.
+    </string>
+    <string name="server_registered">
+        From Demo Server: successfully added device!
+	</string>
+	<string name="server_register_error">
+	    Could not register device on Demo Server after %1$d attempts.
+	</string>
+	<string name="server_unregistered">
+	    From Demo Server: successfully removed device!
+	</string>
+	<string name="gcm_unregistered">
+	    From GCM: device successfully unregistered!
+	</string>
+	<string name="gcm_error">
+	    From GCM: error (%1$s).
+    </string>
+    <string name="server_unregister_error">
+        Could not unregister device on Demo Server (%1$s).
+   	</string>
+   	<string name="log_out">
+   	    Log Out
+   	</string>
+
+</resources>
