@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import static com.example.gcmclient.serviceutilities.CommonUtilities.SENDER_ID;
 import static com.example.gcmclient.serviceutilities.CommonUtilities.SERVER_URL;
@@ -24,6 +25,7 @@ public class RegisterActivity extends Activity implements OnClickListener{
     
     private EditText txt_name, txt_email,txt_pass;
     private Button btn_register;
+    private CheckBox terms_agree;
     private final String TAG = "Register Activity";
     private SessionManager session;
     private String name;
@@ -63,27 +65,35 @@ public class RegisterActivity extends Activity implements OnClickListener{
         txt_pass = (EditText) findViewById(R.id.txtPass);
         btn_register = (Button) findViewById(R.id.btnRegister);
         btn_register.setOnClickListener(this);
+
+        terms_agree = (CheckBox) findViewById( R.id.cbx_terms_agree );
     }
 
 	@Override
 	public void onClick(View v) {
-		name = txt_name.getText().toString();
-        email = txt_email.getText().toString();
-        pass = txt_pass.getText().toString();
-        
-        if(name.trim().length() > 0 && email.trim().length() > 0)
+        if ( terms_agree.isChecked() )
         {
-        	Map<String,Object> to_edit = new HashMap<String, Object>();
-        	to_edit.put(SessionManager.LOGGED_IN, true);
-        	to_edit.put(SessionManager.USER_EMAIL, email);
-        	to_edit.put(SessionManager.USER_NAME, name);
-        	to_edit.put(SessionManager.USER_PASS, pass);
-        	session.putAttributes(to_edit);
-        	startMainActivity();
+            name = txt_name.getText().toString();
+            email = txt_email.getText().toString();
+            pass = txt_pass.getText().toString();
+
+            if(name.trim().length() > 0 && email.trim().length() > 0)
+            {
+                Map<String,Object> to_edit = new HashMap<String, Object>();
+                to_edit.put(SessionManager.LOGGED_IN, true);
+                to_edit.put(SessionManager.USER_EMAIL, email);
+                to_edit.put(SessionManager.USER_NAME, name);
+                to_edit.put(SessionManager.USER_PASS, pass);
+                session.putAttributes(to_edit);
+                startMainActivity();
+            }
+            else
+            {
+                Log.e(TAG, "Blank fields");
+            }
         }
-        else
-        {
-        	Log.e(TAG, "Blank fields");
+        else {
+            Log.e(TAG, "You must Accept terms and conditions");
         }
 	}
 	

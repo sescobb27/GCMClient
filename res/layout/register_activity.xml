@@ -1,53 +1,83 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >   
- 
-     <TextView android:layout_width="fill_parent"
-         android:layout_height="wrap_content"
-         android:text="Full Name:"
-         android:layout_marginLeft="10dip"
-         android:layout_marginRight="10dip"
-         android:layout_marginTop="20dip"/>
- 
-     <EditText android:id="@+id/txtName"
-         android:inputType="text"
-         android:layout_width="fill_parent"
-         android:layout_height="wrap_content"
-         android:layout_margin="10dip"
-         android:layout_marginBottom="20dip"/>
- 
-     <TextView android:layout_width="fill_parent"
-         android:layout_height="wrap_content"
-         android:text="Email:"
-         android:layout_marginLeft="10dip"
-         android:layout_marginRight="10dip"/>
- 
-     <EditText android:id="@+id/txtEmail"
-         android:inputType="textEmailAddress"
-         android:layout_width="fill_parent"
-         android:layout_height="wrap_content"
-         android:layout_margin="10dip"
-         android:layout_marginBottom="20dip"/>
-     
-     <TextView android:layout_width="fill_parent"
-         android:layout_height="wrap_content"
-         android:text="Password:"
-         android:layout_marginLeft="10dip"
-         android:layout_marginRight="10dip"/>
-     
-     <EditText android:id="@+id/txtPass"
-         android:inputType="textPassword"
-         android:layout_width="fill_parent"
-         android:layout_height="wrap_content"
-         android:layout_margin="10dip"
-         android:layout_marginBottom="20dip"/>
- 
-     <Button android:id="@+id/btnRegister"
-         android:layout_width="fill_parent"
-         android:layout_height="wrap_content"
-         android:text="Register"
-         android:layout_margin="10dip"/>
- 
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+         <TextView android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="Full Name:"
+             android:layout_marginLeft="10dip"
+             android:layout_marginRight="10dip"
+             android:layout_marginTop="20dip"/>
+
+         <EditText android:id="@+id/txtName"
+             android:inputType="text"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dip"
+             android:layout_marginBottom="20dip"/>
+
+         <TextView android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="Email:"
+             android:layout_marginLeft="10dip"
+             android:layout_marginRight="10dip"/>
+
+         <EditText android:id="@+id/txtEmail"
+             android:inputType="textEmailAddress"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dip"
+             android:layout_marginBottom="20dip"/>
+
+         <TextView android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="Password:"
+             android:layout_marginLeft="10dip"
+             android:layout_marginRight="10dip"/>
+
+         <EditText android:id="@+id/txtPass"
+             android:inputType="textPassword"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dip"
+             android:layout_marginBottom="20dip"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TERMS AND CONDITIONS"
+            android:id="@+id/txtTermsConditions"
+            android:layout_gravity="left|center_vertical"/>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+            <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/terms_conditions"
+                    android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I have read and agree these terms and conditions"
+                android:id="@+id/cbx_terms_agree"
+                android:layout_gravity="left|center_vertical"/>
+
+        <Button android:id="@+id/btnRegister"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="Register"
+             android:layout_margin="10dip"/>
+
 </LinearLayout>
+</ScrollView>
