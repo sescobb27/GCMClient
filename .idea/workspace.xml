@@ -24,12 +24,7 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="585c13f7-213d-4f83-8f19-a14b9f5d57e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/terms_conditions.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/gcmclient/RegisterActivity.java" afterPath="$PROJECT_DIR$/src/com/example/gcmclient/RegisterActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/register_activity.xml" afterPath="$PROJECT_DIR$/res/layout/register_activity.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="585c13f7-213d-4f83-8f19-a14b9f5d57e1" name="Default" comment="" />
     <ignored path="GCMClient.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -128,7 +123,7 @@
       <file leaf-file-name="RegisterActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/gcmclient/RegisterActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="60" selection-start="3508" selection-end="3508" vertical-scroll-proportion="0.47124305" vertical-offset="931" max-vertical-offset="1470">
+            <state line="95" column="60" selection-start="3508" selection-end="3508" vertical-scroll-proportion="0.69573283" vertical-offset="810" max-vertical-offset="1470">
               <folding>
                 <element signature="e#2969#2985#0" expanded="true" />
               </folding>
@@ -665,7 +660,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/gcmclient/RegisterActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="60" selection-start="3508" selection-end="3508" vertical-scroll-proportion="0.47124305" vertical-offset="931" max-vertical-offset="1470">
+        <state line="95" column="60" selection-start="3508" selection-end="3508" vertical-scroll-proportion="0.69573283" vertical-offset="810" max-vertical-offset="1470">
           <folding>
             <element signature="e#2969#2985#0" expanded="true" />
           </folding>
